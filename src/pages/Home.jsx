@@ -116,8 +116,8 @@ export default function Home() {
                 <Button to="/contact" variant="primary" size="lg" icon={true}>
                   Start a Project
                 </Button>
-                <Button to="/portfolio" variant="secondary" size="lg">
-                  View Our Work
+                <Button to="/blogs" variant="secondary" size="lg">
+                  Read Our Insights
                 </Button>
               </div>
 
@@ -323,8 +323,8 @@ export default function Home() {
               </p>
             </div>
 
-            <Button to="/portfolio" variant="outline" size="md" icon={true}>
-              View All Projects
+            <Button to="/blogs" variant="outline" size="md" icon={true}>
+              Read Design Insights
             </Button>
           </div>
 
@@ -381,8 +381,8 @@ export default function Home() {
               <Button to="/contact" variant="primary" size="lg" icon={true}>
                 Start Your Project
               </Button>
-              <Button to="/portfolio" variant="secondary" size="lg">
-                Explore Portfolio
+              <Button to="/blogs" variant="secondary" size="lg">
+                Read Studio Blogs
               </Button>
             </div>
 
