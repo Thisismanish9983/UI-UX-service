@@ -6,11 +6,7 @@ export const blogsData = [
     category: "Design Systems",
     readTime: "6 min read",
     date: "Feb 18, 2026",
-    author: {
-      name: "Julian Vance",
-      role: "Design Director",
-      avatar: "JV"
-    },
+    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
     excerpt: "How modern product teams synchronize design tokens across web, iOS, and Android to eliminate UI drift and 10x engineering velocity.",
     takeaways: [
       "Semantic design tokens separate visual decisions from component logic, enabling instantaneous global theme adjustments.",
@@ -39,11 +35,7 @@ export const blogsData = [
     category: "UX Research",
     readTime: "8 min read",
     date: "Jan 28, 2026",
-    author: {
-      name: "Aria Sterling",
-      role: "Head of UX Strategy",
-      avatar: "AS",
-    },
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
     excerpt: "Analyzing over 1.2M user sessions to quantify the impact of subtle button haptics, skeleton loading states, and inline confirmation cues.",
     takeaways: [
       "Optimistic UI updates paired with 150ms spring transitions decreased perceived waiting time by 44%.",
@@ -72,11 +64,7 @@ export const blogsData = [
     category: "SaaS UX",
     readTime: "7 min read",
     date: "Jan 12, 2026",
-    author: {
-      name: "Darius Chen",
-      role: "Principal Systems Architect",
-      avatar: "DC"
-    },
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
     excerpt: "Why product tours fail and how self-directed progressive disclosure creates instant Time-to-Value for enterprise end users.",
     takeaways: [
       "Forced 7-step modal product tours are dismissed by 82% of users within the first 3 seconds.",
@@ -105,11 +93,7 @@ export const blogsData = [
     category: "Mobile UX",
     readTime: "5 min read",
     date: "Dec 20, 2025",
-    author: {
-      name: "Julian Vance",
-      role: "Design Director",
-      avatar: "JV"
-    },
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80",
     excerpt: "With smartphone screens growing beyond 6.7 inches, here is how to formulate navigation layouts that prevent thumb strain and increase tap accuracy.",
     takeaways: [
       "Over 75% of one-handed smartphone interactions occur exclusively within the lower natural thumb arc.",
@@ -138,11 +122,7 @@ export const blogsData = [
     category: "Product Strategy",
     readTime: "9 min read",
     date: "Dec 04, 2025",
-    author: {
-      name: "Aria Sterling",
-      role: "Head of UX Strategy",
-      avatar: "AS"
-    },
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     excerpt: "A practical guide to leveraging generative AI for rapid prototyping without losing the irreplaceable nuance of human qualitative research.",
     takeaways: [
       "AI excels at rapid synthetic persona drafting and edge-case scenario stress testing.",
@@ -171,11 +151,7 @@ export const blogsData = [
     category: "Product Strategy",
     readTime: "6 min read",
     date: "Nov 15, 2025",
-    author: {
-      name: "Darius Chen",
-      role: "Principal Systems Architect",
-      avatar: "DC"
-    },
+    image: "https://images.unsplash.com/photo-1581291518655-9523c932deda?auto=format&fit=crop&w=1200&q=80",
     excerpt: "Just like technical debt, accumulated design inconsistencies silently drain conversion rates and inflate customer support costs. Here is our triage framework.",
     takeaways: [
       "Every disconnected button style or rogue modal introduces micro-hesitations that lower visitor trust.",

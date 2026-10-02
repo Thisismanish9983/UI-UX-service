@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, Calendar, ArrowRight, BookOpen, Sparkles } from 'lucide-react';
+import { Clock, Calendar, ArrowRight } from 'lucide-react';
 import Button from '../components/Button';
 import { blogsData } from '../data/blogs';
 
@@ -71,11 +71,21 @@ export default function Blogs() {
             <article
               key={blog.id}
               className="project-card"
-              style={{ padding: '32px', gap: '20px' }}
+              style={{ padding: '24px', gap: '16px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
             >
               <div>
+                {/* Blog Card Image */}
+                <div style={{ width: '100%', height: '220px', overflow: 'hidden', borderRadius: 'var(--radius-md)', marginBottom: '18px' }}>
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    loading="lazy"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+
                 {/* Meta Top: Category + Read Time + Date */}
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexWrap: 'wrap', gap: '8px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px', flexWrap: 'wrap', gap: '8px' }}>
                   <span
                     className="service-cat-pill"
                     style={{ background: 'rgba(99, 102, 241, 0.12)', color: 'var(--primary-light)', border: '1px solid rgba(99, 102, 241, 0.25)' }}
@@ -96,30 +106,20 @@ export default function Blogs() {
                 </div>
 
                 {/* Blog Title */}
-                <h2 style={{ fontSize: '1.375rem', fontWeight: 800, marginBottom: '12px', color: '#FFFFFF', lineHeight: 1.3 }}>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '10px', color: '#FFFFFF', lineHeight: 1.35 }}>
                   <Link to={`/blogs/${blog.id}`} style={{ color: 'inherit' }}>
                     {blog.title}
                   </Link>
                 </h2>
 
                 {/* Excerpt */}
-                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', lineHeight: 1.6, marginBottom: '20px' }}>
+                <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', lineHeight: 1.6, marginBottom: '16px' }}>
                   {blog.excerpt}
                 </p>
               </div>
 
-              {/* Author & View More Button */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '18px', borderTop: '1px solid rgba(255,255,255,0.06)', flexWrap: 'wrap', gap: '12px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  <div className="author-avatar" style={{ width: '34px', height: '34px', fontSize: '0.75rem' }}>
-                    {blog.author.avatar}
-                  </div>
-                  <div>
-                    <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: '#FFFFFF' }}>{blog.author.name}</div>
-                    <div style={{ fontSize: '0.6875rem', color: 'var(--text-subtle)' }}>{blog.author.role}</div>
-                  </div>
-                </div>
-
+              {/* View More Button (No author name or avatar) */}
+              <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
                 <Link
                   to={`/blogs/${blog.id}`}
                   className="btn btn-secondary btn-sm"

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Clock, Calendar, CheckCircle2, Share2, Sparkles, BookOpen } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, CheckCircle2, Sparkles } from 'lucide-react';
 import Button from '../components/Button';
 import { blogsData } from '../data/blogs';
 
@@ -33,7 +33,7 @@ export default function BlogPost() {
 
   return (
     <div style={{ padding: '60px 0 100px' }}>
-      <div className="container-narrow" style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
+      <div className="container-narrow" style={{ display: 'flex', flexDirection: 'column', gap: '36px' }}>
         {/* Back Link */}
         <div>
           <Link
@@ -47,7 +47,7 @@ export default function BlogPost() {
         </div>
 
         {/* Article Header */}
-        <header style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        <header style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
             <span
               className="service-cat-pill"
@@ -72,19 +72,27 @@ export default function BlogPost() {
           <p style={{ fontSize: '1.125rem', color: 'var(--text-body)', lineHeight: 1.6, fontStyle: 'italic', borderLeft: '3px solid var(--primary)', paddingLeft: '16px' }}>
             {blog.excerpt}
           </p>
-
-          {/* Author Byline */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '16px 0', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)', marginTop: '8px' }}>
-            <div className="author-avatar" style={{ width: '44px', height: '44px', fontSize: '0.875rem' }}>
-              {blog.author.avatar}
-            </div>
-            <div>
-              <div style={{ fontSize: '0.9375rem', fontWeight: 700, color: '#FFFFFF' }}>{blog.author.name}</div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{blog.author.role} • VALENCE Design Studio</div>
-            </div>
-          </div>
         </header>
 
+        {/* Top Featured Image (Page me upar image) */}
+        <div
+          style={{
+            width: '100%',
+            height: '420px',
+            overflow: 'hidden',
+            borderRadius: 'var(--radius-xl)',
+            border: '1px solid var(--border-subtle)',
+            boxShadow: 'var(--shadow-md)'
+          }}
+        >
+          <img
+            src={blog.image}
+            alt={blog.title}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
+
+        {/* Below Image: Blog Content */}
         {/* Key Takeaways Callout Box */}
         {blog.takeaways && (
           <div
@@ -149,18 +157,27 @@ export default function BlogPost() {
               <div
                 key={rel.id}
                 className="project-card"
-                style={{ padding: '24px', cursor: 'pointer' }}
+                style={{ padding: '20px', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '12px' }}
                 onClick={() => navigate(`/blogs/${rel.id}`)}
               >
-                <div style={{ fontSize: '0.6875rem', color: 'var(--primary-light)', fontWeight: 700, textTransform: 'uppercase', marginBottom: '8px' }}>
-                  {rel.category}
+                <div style={{ width: '100%', height: '140px', overflow: 'hidden', borderRadius: 'var(--radius-md)' }}>
+                  <img
+                    src={rel.image}
+                    alt={rel.title}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
                 </div>
-                <h4 style={{ fontSize: '1.0625rem', fontWeight: 700, marginBottom: '8px', color: '#FFFFFF' }}>
-                  {rel.title}
-                </h4>
-                <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.5, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                  {rel.excerpt}
-                </p>
+                <div>
+                  <div style={{ fontSize: '0.6875rem', color: 'var(--primary-light)', fontWeight: 700, textTransform: 'uppercase', marginBottom: '6px' }}>
+                    {rel.category}
+                  </div>
+                  <h4 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '6px', color: '#FFFFFF' }}>
+                    {rel.title}
+                  </h4>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.5, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                    {rel.excerpt}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

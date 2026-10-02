@@ -39,15 +39,6 @@ export default function Home() {
     .filter(Boolean);
   const featuredProjects = projectsData.filter((p) => p.featured);
 
-  const trustedCompanies = [
-    { name: 'Novaflow', type: 'Fintech Protocol' },
-    { name: 'HyperScale', type: 'Cloud Infrastructure' },
-    { name: 'Synthetix', type: 'AI Analytics' },
-    { name: 'PulsePay', type: 'Global Checkout' },
-    { name: 'CloudCore', type: 'DevOps Platform' },
-    { name: 'Veloce', type: 'Autonomous Logistics' },
-  ];
-
   const processSteps = [
     {
       number: '01',
@@ -145,30 +136,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ==================================================
-          2. TRUST SECTION
-          ================================================== */}
-      <section className="trust-section">
-        <div className="container">
-          <p className="trust-heading">
-            Trusted by teams building the future
-          </p>
 
-          <div className="grid-6">
-            {trustedCompanies.map((company, index) => (
-              <div key={index} className="trust-logo-item">
-                <div className="trust-brand-row">
-                  <div className="trust-badge-letter">
-                    {company.name.slice(0, 1)}
-                  </div>
-                  <span>{company.name}</span>
-                </div>
-                <span className="trust-subtext">{company.type}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ==================================================
           3. SERVICES SECTION

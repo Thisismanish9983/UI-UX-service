@@ -129,11 +129,7 @@ export default function TermsOfService() {
               7. Inquiries & Legal Notices
             </h2>
             <p style={{ color: 'var(--text-body)', fontSize: '0.9375rem', lineHeight: 1.7 }}>
-              Official legal notices and partnership questions should be directed in writing to{' '}
-              <a href="mailto:legal@valencedesign.studio" style={{ color: 'var(--primary-light)', textDecoration: 'underline' }}>
-                legal@valencedesign.studio
-              </a>{' '}
-              or addressed through our{' '}
+              Official legal notices and partnership questions should be addressed directly through our{' '}
               <Link to="/contact" style={{ color: 'var(--primary-light)', textDecoration: 'underline' }}>
                 Contact Form
               </Link>.

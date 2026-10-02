@@ -126,11 +126,7 @@ export default function PrivacyPolicy() {
               6. Contact Our Privacy Officer
             </h2>
             <p style={{ color: 'var(--text-body)', fontSize: '0.9375rem', lineHeight: 1.7 }}>
-              For any questions regarding this Privacy Policy, NDA execution, or data rights requests, please email us directly at{' '}
-              <a href="mailto:privacy@valencedesign.studio" style={{ color: 'var(--primary-light)', textDecoration: 'underline' }}>
-                privacy@valencedesign.studio
-              </a>{' '}
-              or reach our studio via our{' '}
+              For any questions regarding this Privacy Policy, NDA execution, or data rights requests, please reach our studio directly via our{' '}
               <Link to="/contact" style={{ color: 'var(--primary-light)', textDecoration: 'underline' }}>
                 Contact Page
               </Link>.
