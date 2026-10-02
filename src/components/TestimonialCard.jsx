@@ -25,21 +25,9 @@ export default function TestimonialCard({ testimonial }) {
         )}
 
         {/* Quote body */}
-        <p className="testimonial-quote">
+        <p className="testimonial-quote" style={{ marginBottom: 0 }}>
           "{testimonial.testimonial}"
         </p>
-      </div>
-
-      {/* Client info */}
-      <div className="author-row">
-        <div>
-          <h4 className="author-name">
-            {testimonial.role}
-          </h4>
-          <p className="author-role">
-            <strong style={{ color: 'var(--text-body)' }}>{testimonial.company}</strong>
-          </p>
-        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ export const blogsData = [
     category: "Design Systems",
     readTime: "6 min read",
     date: "Feb 18, 2026",
-    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80",
     excerpt: "How modern product teams synchronize design tokens across web, iOS, and Android to eliminate UI drift and 10x engineering velocity.",
     takeaways: [
       "Semantic design tokens separate visual decisions from component logic, enabling instantaneous global theme adjustments.",
@@ -35,7 +35,7 @@ export const blogsData = [
     category: "UX Research",
     readTime: "8 min read",
     date: "Jan 28, 2026",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=1200&q=80",
     excerpt: "Analyzing over 1.2M user sessions to quantify the impact of subtle button haptics, skeleton loading states, and inline confirmation cues.",
     takeaways: [
       "Optimistic UI updates paired with 150ms spring transitions decreased perceived waiting time by 44%.",
@@ -122,7 +122,7 @@ export const blogsData = [
     category: "Product Strategy",
     readTime: "9 min read",
     date: "Dec 04, 2025",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
     excerpt: "A practical guide to leveraging generative AI for rapid prototyping without losing the irreplaceable nuance of human qualitative research.",
     takeaways: [
       "AI excels at rapid synthetic persona drafting and edge-case scenario stress testing.",
@@ -151,7 +151,7 @@ export const blogsData = [
     category: "Product Strategy",
     readTime: "6 min read",
     date: "Nov 15, 2025",
-    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80",
     excerpt: "Just like technical debt, accumulated design inconsistencies silently drain conversion rates and inflate customer support costs. Here is our triage framework.",
     takeaways: [
       "Every disconnected button style or rogue modal introduces micro-hesitations that lower visitor trust.",
