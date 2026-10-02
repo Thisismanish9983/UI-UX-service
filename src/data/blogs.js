@@ -151,7 +151,7 @@ export const blogsData = [
     category: "Product Strategy",
     readTime: "6 min read",
     date: "Nov 15, 2025",
-    image: "https://images.unsplash.com/photo-1581291518655-9523c932deda?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80",
     excerpt: "Just like technical debt, accumulated design inconsistencies silently drain conversion rates and inflate customer support costs. Here is our triage framework.",
     takeaways: [
       "Every disconnected button style or rogue modal introduces micro-hesitations that lower visitor trust.",

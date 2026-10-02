@@ -58,22 +58,16 @@ export default function About() {
 
   const leadership = [
     {
-      name: 'Julian Vance',
       role: 'Founding Partner & Design Director',
       bio: 'Ex-Fintech Lead with 10+ years shaping high-density interfaces and atomic design systems.',
-      avatar: 'JV',
     },
     {
-      name: 'Aria Sterling',
       role: 'Head of UX Research & Strategy',
       bio: 'Cognitive scientist and usability specialist dedicated to removing cognitive friction from digital products.',
-      avatar: 'AS',
     },
     {
-      name: 'Darius Chen',
       role: 'Principal Systems Architect',
       bio: 'Specialist in scalable multi-brand design tokens, responsive grid systems, and micro-interactions.',
-      avatar: 'DC',
     },
   ];
 
@@ -224,13 +218,7 @@ export default function About() {
           <div className="grid-3">
             {leadership.map((member, i) => (
               <div key={i} className="why-card" style={{ padding: '32px' }}>
-                <div className="author-avatar" style={{ width: '56px', height: '56px', fontSize: '1.125rem', borderRadius: '16px', marginBottom: '8px' }}>
-                  {member.avatar}
-                </div>
-                <div>
-                  <h3 style={{ fontSize: '1.125rem', marginBottom: '4px' }}>{member.name}</h3>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--primary-light)', fontWeight: 600 }}>{member.role}</p>
-                </div>
+                <h3 style={{ fontSize: '1.125rem', marginBottom: '8px', color: '#FFFFFF' }}>{member.role}</h3>
                 <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
                   {member.bio}
                 </p>

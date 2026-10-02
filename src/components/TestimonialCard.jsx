@@ -30,17 +30,14 @@ export default function TestimonialCard({ testimonial }) {
         </p>
       </div>
 
-      {/* Author info */}
+      {/* Client info */}
       <div className="author-row">
-        <div className="author-avatar">
-          {testimonial.avatar || testimonial.name.slice(0, 2).toUpperCase()}
-        </div>
         <div>
           <h4 className="author-name">
-            {testimonial.name}
+            {testimonial.role}
           </h4>
           <p className="author-role">
-            {testimonial.role} • <strong style={{ color: 'var(--text-body)' }}>{testimonial.company}</strong>
+            <strong style={{ color: 'var(--text-body)' }}>{testimonial.company}</strong>
           </p>
         </div>
       </div>
